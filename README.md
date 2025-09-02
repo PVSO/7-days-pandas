@@ -16,9 +16,12 @@ Nesse contexto, o Analista de Dados tem um papel fundamental para coletar, anali
 2. Todos os valores dos registros do sistema dos exemplares foram removidos.
 3. A análise considerou apenas os exemplares da UFRN.
 
-<!-- # Estratégia da solução
-O método Fato-Dimensão foi usado para desenvolver a análise de dados da campanha de Marketing.
+# Estratégia da solução
+O método de Análise Exploratória de Dados (EDA - Exploratory Data Analysis) foi usado para conduzir esse projeto.
 
+Esse método consiste em um conjunto de técnicas estatísticas e de visualização que permitem compreender a estrutura do conjunto de dados, identificar padrões de comportamento, testar hipóteses iniciais e detectar anomalias ou inconsistências.
+
+<!-- 
 ## Passo 1: Resumir o contexto em uma pergunta aberta
 As perguntas abertas são um tipo de demanda muito comum em análise de dados no qual a demanda possui N possíveis soluções e cabe ao Analista de Dados avaliar as possibilidades e escolher a alternativa com o maior retorno com o menor esforço possível. Para essa análise foi definida a seguinte pergunta aberta:
 
