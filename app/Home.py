@@ -64,6 +64,10 @@ st.markdown('---')
 
 col_graf1, col_graf2 = st.columns(2)
 
+col_graf3 = st.container()
+
+col_graf4, col_graf5 = st.columns(2)
+
 df['data_emprestimo'] = pd.to_datetime(df['data_emprestimo'], dayfirst=True, format='ISO8601')
 
 qtd_por_ano = df['data_emprestimo'].value_counts().reset_index()
@@ -145,5 +149,141 @@ with col_graf2:
         st.plotly_chart(fig, use_container_width=True, key='Gráfico da quantidade total de exemplares emprestados por mês')
         st.markdown("**Resumo:**\n")
 
+    else:
+        st.warning('Não foi possível exibir o gráfico de exemplares emprestados por cada ano')
+
+with col_graf3:
+    if not df.empty:
+        qtd_por_hora_agrupado = qtd_por_ano.groupby(
+            by=qtd_por_ano.data.dt.hour
+            ).sum(numeric_only=True).reset_index()
+
+        qtd_por_hora_agrupado.rename(
+            columns={
+                'data': 'hora'
+            },
+            inplace=True
+        )
+
+        # qtd_por_hora_agrupado
+
+        # Plote um gráfico de barras e analise quais seriam os melhores horários para alocar as demais
+        # atividades que não sejam de atendimento ao usuário.
+        fig = px.bar(
+            qtd_por_hora_agrupado,
+            x='hora',
+            y='quantidade',
+            title='Quantidade total de exemplares emprestados por hora',
+        )
+
+        st.plotly_chart(fig, use_container_width=True, key='Quantidade total de exemplares emprestados por hora')
+        st.markdown("**Resumo:**\n")
+    else:
+        st.warning('Não foi possível exibir o gráfico de exemplares emprestados por cada ano')
+
+with col_graf4:
+    if not df.empty:
+        
+        alunos_graduacao = df[df['tipo_vinculo_usuario'] == 'ALUNO DE GRADUAÇÃO']
+
+        colecao = alunos_graduacao['colecao'].value_counts().idxmax()
+
+        emprestimos_graduacao = alunos_graduacao[alunos_graduacao['colecao'] == colecao].copy()
+
+        emprestimos_graduacao['ano'] = emprestimos_graduacao['data_emprestimo'].dt.year
+        emprestimos_graduacao['mes'] = emprestimos_graduacao['data_emprestimo'].dt.month
+
+        mes_renomear = {
+            1: 'jan',
+            2: 'fev',
+            3: 'mar',
+            4: 'abr',
+            5: 'mai',
+            6: 'jun',
+            7: 'jul',
+            8: 'ago',
+            9: 'set',
+            10: 'out',
+            11: 'nov',
+            12: 'dez',
+        }
+
+        emprestimos_graduacao['mes'] = emprestimos_graduacao['mes'].map(mes_renomear)
+
+        emprestimos_graduacao = emprestimos_graduacao.loc[:,['ano', 'mes']]
+        emprestimos_graduacao = emprestimos_graduacao.value_counts().to_frame('quantidade').reset_index()
+
+        emprestimos_graduacao['mes'].unique()
+
+        meses = [
+            'jan', 'fev', 'mar', 'abr', 'mai', 'jun', 'jul', 'ago', 'set', 'out', 'nov', 'dez'
+        ]
+
+        fig = px.box(
+            emprestimos_graduacao,
+            x='mes',
+            y='quantidade',
+            color='mes',
+            category_orders={
+                'mes': meses
+            },
+            title='Graduação<br>Distribuição Mensal de Empréstimos dos anos 2010 a 2022<br>Coleção Mais Emprestada'
+        )
+
+        fig.update_layout(xaxis_title="Mês", yaxis_title="Quantidade")
+
+        st.plotly_chart(fig, use_container_width=True, key='Graduação - Distribuição Mensal de Empréstimos dos anos 2010 a 2022 por Coleção Mais Emprestada')
+        st.markdown("**Resumo:**\n")
+
+    else:
+        st.warning('Não foi possível exibir o gráfico de exemplares emprestados por cada ano')
+
+with col_graf5:
+    if not df.empty:
+        alunos_pos_graduacao = df[df['tipo_vinculo_usuario'] == 'ALUNO DE PÓS-GRADUAÇÃO']
+
+        colecao = alunos_pos_graduacao['colecao'].value_counts().idxmax()
+
+        emprestimos = alunos_pos_graduacao[alunos_pos_graduacao['colecao'] == colecao].copy()
+
+        emprestimos['ano'] = emprestimos['data_emprestimo'].dt.year
+        emprestimos['mes'] = emprestimos['data_emprestimo'].dt.month
+
+        mes_renomear = {
+            1: 'jan',
+            2: 'fev',
+            3: 'mar',
+            4: 'abr',
+            5: 'mai',
+            6: 'jun',
+            7: 'jul',
+            8: 'ago',
+            9: 'set',
+            10: 'out',
+            11: 'nov',
+            12: 'dez',
+        }
+
+        emprestimos['mes'] = emprestimos['mes'].map(mes_renomear)
+
+        emprestimos = emprestimos.loc[:,['ano', 'mes']]
+        emprestimos = emprestimos.value_counts().to_frame('quantidade').reset_index()
+
+        meses = [
+            'jan', 'fev', 'mar', 'abr', 'mai', 'jun', 'jul', 'ago', 'set', 'out', 'nov', 'dez'
+        ]
+
+        fig = px.box(
+            emprestimos,
+            x='mes',
+            y='quantidade',
+            color='mes',
+            category_orders={
+                'mes': meses
+            },
+            title='Pós-Graduação - Distribuição Mensal de Empréstimos dos anos 2010 a 2022<br>Coleção Mais Emprestada'
+        )
+        st.plotly_chart(fig, use_container_width=True, key='Pós-Graduação - Distribuição Mensal de Empréstimos dos anos 2010 a 2022 por Coleção Mais Emprestada')
+        st.markdown("**Resumo:**\n")
     else:
         st.warning('Não foi possível exibir o gráfico de exemplares emprestados por cada ano')
