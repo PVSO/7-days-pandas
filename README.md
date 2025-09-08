@@ -21,19 +21,29 @@ O método de Análise Exploratória de Dados (EDA - Exploratory Data Analysis) f
 
 Esse método consiste em um conjunto de técnicas estatísticas e de visualização que permitem compreender a estrutura do conjunto de dados, identificar padrões de comportamento, testar hipóteses iniciais e detectar anomalias ou inconsistências.
 
+## Passo 1: Entendimento dos Dados
+ - Análise descritiva Inicial - foi realizada uma análise descritiva com o objetivo de entender o tamanho, a estrutura, as colunas disponíveis e as estatísticas básicas dos dados, identificando padrões iniciais e possíveis inconsistências.
+ - Descrição das colunas da Base de dados:
+    - **id_emprestimo** - Identificador do empréstimo
+    - **codigo_barras** - Código de barras do item do acervo
+    - **data_renovacao** - Data da renovação do empréstimo.
+    - **data_emprestimo** - Data da realização do empréstimo.
+    - **data_devolucao** - Data da devolução do item
+    - **matricula_ou_siape** - Matricula ou siape do usuário que realizou o
+    empréstimo.
+    - **tipo_vinculo_usuario** - Tipo do vínculo do usuário (servidor, discente,
+    docente, etc.). 
+
+
+## Passo 2: Tratamento Inicial
+ - Limpeza de valores nulos e inconsistentes.
+ - Classificação do arcevo da biblioteca (CDU).
+ - Corrreção dos nomes dos níveis de ensino com ftfy.
+ - Criação de um novo dataframe contendo os emprestimos e exemplares.
+ - Criação de um novo dataframe contendo os emprestimos dos alunos de 2018 e 2019 de Graduação
+ - Criação de um novo dataframe contendo os emprestimos dos alunos de 2018 e 2019 de Pós-Graduação
+
 <!-- 
-## Passo 1: Resumir o contexto em uma pergunta aberta
-As perguntas abertas são um tipo de demanda muito comum em análise de dados no qual a demanda possui N possíveis soluções e cabe ao Analista de Dados avaliar as possibilidades e escolher a alternativa com o maior retorno com o menor esforço possível. Para essa análise foi definida a seguinte pergunta aberta:
-
-**Como aumentar o resultado da próxima campanha de Marketing?**
-
-## Passo 2: Transformar a pergunta aberta em fechada
-As perguntas fechadas são um tipo de demanda muito comum em análise de dados. Essa demanda contém todos os detalhes da análise de dados e direciona o analista exatamente para o que precisa ser feito. Geralmente, a pergunta fechada é a escolha de uma solução entre todas as alternativas possíveis, feita por um profissional mais Senior da área.
-
-Para essa análise, foi definida a seguinte pergunta fechada:
-
-**Quais são as características dos clientes que mais gastaram na campanha de MArketing?**
-
 ## Passo 3: Definição da coluna Fato
 O Fato é a coluna de interesse que representa o ponto focal da análise. Nesse caso, a coluna "Gasto-Clientes" representa o faturamento de cada cliente dentro da campanha e será o objetivo da nossa análise, dado que o problema envolve aumento do faturamento na próxima campanha de Marketing.
 
