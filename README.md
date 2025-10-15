@@ -56,6 +56,46 @@ Esse método consiste em um conjunto de técnicas estatísticas e de visualizaç
  - Previsão de emprestimos para cursos de Pós-Graduação para o ano de 2023.
 
 
+## Passo 5: Hipóteses Análiticas
+Hipótese 1 - A quantidade de empréstimos está aumentando ou diminuindo ao decorrer dos últimos anos?
+![Hipótese 1](reports/figures/emprestimos_ano_bar.png)
+
+Hipótese 2 - Em quais bibliotecas do sistema estão a maior quantidade de empréstimos?
+![Hipótese 2](reports/figures/bibliotecas.png)
+
+BCZM: Biblioteca Central Zila Mamede,
+BSEAJ: Biblioteca Setorial Prof. Rodolfo Helinski - Escola Agrícola de Jundiaí - EAJ - Macaiba,
+BSES: Biblioteca Setorial Bertha Cruz Enders - Escola de Saúde da UFRN - ESUFRN,
+BSCCS: Biblioteca Setorial do Centro Ciências da Saúde - CCS,
+BSDO: Biblioteca Setorial Prof. Alberto Moreira Campos - Departamento de Odontologia,
+BSCCET: Biblioteca Setorial Prof. Ronaldo Xavier de Arruda - CCET,
+BSCCHLA – CCHLA: Biblioteca Setorial do Centro de Ciências Humanas, Letras e Artes - CCHLA,
+BSEQ: Biblioteca Setorial Prof. Horácio Nicolas Solimo - Engenharia Química - EQ - CT,
+BSIQ: Biblioteca Setorial Prof. Francisco Gurgel De Azevedo - Instituto Química - IQ,
+BSCCSA – CCSA: Biblioteca Setorial do Centro Ciências Sociais Aplicadas - CCSA,
+BSDEART – DEART: Biblioteca Setorial do Departamento de Artes - DEART,
+BSDARQ: Biblioteca Setorial Prof. Dr. Marcelo Bezerra de Melo Tinôco - DARQ - CT,
+BSICE: Biblioteca Setorial Árvore do Conhecimento - Instituto do Cérebro - ICe,
+BSCE: Biblioteca Setorial Moacyr de Góes - CE,
+BSCB: Biblioteca Setorial Prof. Leopoldo Nelson - Centro de Biociências - CB,
+BSEMCM: Biblioteca Setorial Dr. Paulo Bezerra - EMCM/RN - Caicó,
+BSEMUFRN: Biblioteca Setorial Pe. Jaime Diniz - Escola de Música - EMUFRN,
+BSCERES: Biblioteca Setorial Profª. Maria Lúcia da Costa Bezerra - CERES - Caicó,
+BSFELCS: Biblioteca Setorial Profª. Maria José Mamede Galvão - FELCS - Currais Novos,
+BSNEI: Biblioteca Setorial do Núcleo de Educação da Infância - NEI,
+BSFACISA: Biblioteca Setorial da Faculdade de Ciências da Saúde do Trairi - FACISA - Santa Cruz,
+BSNESA – NES: Biblioteca Setorial do Núcleo de Ensino Superior do Agreste - NESA - Nova Cruz
+
+Hipótese 3 - Quais são os temas mais emprestados? E os menos?
+![Hipótese 3](reports/figures/temas.png)
+
+Hipótese 4 - Como se distribuem os empréstimos de exemplares pelos tipos de vínculo dos usuários?
+![Hipótese 4](reports/figures/usuarios.png)
+
+Hipótese 5 - Quais coleções são mais emprestadas?
+![Hipótese 5](reports/figures/colecao.png)
+
+
 ## Passo 5: Visualização
  - Criação de dashboard contendo métricas principais (Total de registros na base de dados, Tema mais emprestado, Biblioteca com maior arcevo, Coleção mais frequente,Tipo de vinculo de usuário que mais usa o arcevo), gráficos de linha para distribuição anual dos emprestimos durante os anos de 2010 a 2022.
 
