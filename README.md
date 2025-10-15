@@ -65,6 +65,7 @@ Hipótese 2 - Em quais bibliotecas do sistema estão a maior quantidade de empr�
 
 ![Hipótese 2](reports/figures/bibliotecas.png)
 
+
 **Siglas das Bibliotecas da UFRN:**
 - **BCZM**: Biblioteca Central Zila Mamede,
 - **BSEAJ**: Biblioteca Setorial Prof. Rodolfo Helinski - Escola Agrícola de Jundiaí - EAJ - Macaiba,
@@ -87,7 +88,7 @@ Hipótese 2 - Em quais bibliotecas do sistema estão a maior quantidade de empr�
 - **BSFELCS**: Biblioteca Setorial Profª. Maria José Mamede Galvão - FELCS - Currais Novos,
 - **BSNEI**: Biblioteca Setorial do Núcleo de Educação da Infância - NEI,
 - **BSFACISA**: Biblioteca Setorial da Faculdade de Ciências da Saúde do Trairi - FACISA - Santa Cruz,
-- **BSNESA – NES**: Biblioteca Setorial do Núcleo de Ensino Superior do Agreste - NESA - Nova Cruz
+- **BSNESA – NESA**: Biblioteca Setorial do Núcleo de Ensino Superior do Agreste - NESA - Nova Cruz
 
 Hipótese 3 - Quais são os temas mais emprestados? E os menos?
 
