@@ -58,12 +58,10 @@ Esse método consiste em um conjunto de técnicas estatísticas e de visualizaç
 
 ## Passo 5: Hipóteses Análiticas
 Hipótese 1 - A quantidade de empréstimos está aumentando ou diminuindo ao decorrer dos últimos anos?
-
-![Hipótese 1](reports/figures/emprestimos_ano_bar.png)
+![Hipótese 1](https://github.com/user-attachments/assets/dac7184a-5086-442f-bbaf-ab4d01a724a8)
 
 Hipótese 2 - Em quais bibliotecas do sistema estão a maior quantidade de empréstimos?
-
-![Hipótese 2](reports/figures/bibliotecas.png)
+![Hipótese 2](https://github.com/user-attachments/assets/8bb978c8-5f1f-4528-a770-6a430692fed4)
 
 
 **Siglas das Bibliotecas da UFRN:**
@@ -91,16 +89,13 @@ Hipótese 2 - Em quais bibliotecas do sistema estão a maior quantidade de empr�
 - **BSNESA – NESA**: Biblioteca Setorial do Núcleo de Ensino Superior do Agreste - NESA - Nova Cruz
 
 Hipótese 3 - Quais são os temas mais emprestados? E os menos?
-
-![Hipótese 3](reports/figures/temas.png)
+![Hipótese 3](https://github.com/user-attachments/assets/12e83d7a-3f62-4597-93ff-b3cd27b977eb)
 
 Hipótese 4 - Como se distribuem os empréstimos de exemplares pelos tipos de vínculo dos usuários?
-
-![Hipótese 4](reports/figures/usuarios.png)
+![Hipótese 4](https://github.com/user-attachments/assets/9a931034-ce85-471c-b1c8-bf12c11e1edb)
 
 Hipótese 5 - Quais coleções são mais emprestadas?
-
-![Hipótese 5](reports/figures/colecao.png)
+![Hipótese 5](https://github.com/user-attachments/assets/f0b8e852-d006-43be-98cb-8a71ed25fe8d)
 
 ## Passo 5: Visualização
  - Criação de dashboard contendo métricas principais (Total de registros na base de dados, Tema mais emprestado, Biblioteca com maior arcevo, Coleção mais frequente,Tipo de vinculo de usuário que mais usa o arcevo), gráficos de linha para distribuição anual dos emprestimos durante os anos de 2010 a 2022.
