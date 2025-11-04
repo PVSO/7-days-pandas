@@ -105,14 +105,22 @@ Hipótese 5 - Quais coleções são mais emprestadas?
 ## Passo 5: Visualização
  - Criação de dashboard contendo métricas principais (Total de registros na base de dados, Tema mais emprestado, Biblioteca com maior arcevo, Coleção mais frequente,Tipo de vinculo de usuário que mais usa o arcevo), gráficos de linha para distribuição anual dos emprestimos durante os anos de 2010 a 2022.
 
-<!-- 
 
-## Visualize a análise completa:
-[Dashboard](https://lookerstudio.google.com/reporting/9536ef1a-3c05-4347-b335-ae914e3c92d5)
+# Resultados
+- Desde 2014 observa-se uma tendência de queda nos empréstimos, com redução acentuada em 2019 possivelmente relacionada às restrições da pandemia de COVID-19. Em 2022 houve uma leve recuperação, refletindo a retomada das atividades presenciais. Recomenda-se investigar fatores internos e externos que possam ter contribuído para a diminuição contínua desde 2014 e durante o período pandêmico.
 
+- Meses como maio, junho, outubro e novembro podem ser uma opção a ser considerada pela direção da biblioteca para realizar outras atividades que não sejam de atendimento ao usuário.
+
+- Períodos do começo da manhã (entre 7h e 9) e da noite (entre 19h e 22) podem ser os melhores horários para realizar demais atividades além do atendimento.
+
+- O maior público da biblioteca são de fato os alunos de graduação com aproxidamente 78%, seguido pelos alunos de pós graduação com aproximadamente 15%.
 
 # Próximos Passos
-1. Explorar mais características ods clientes.
-2. Automatizar a coleta e a análise para acompanhamento.
-3. Agrupar os clientes em grupos de maior e menor faturamento para entender se há similaridades ou não.
-4. Montar um dashboard de acompanhamento das métricas das futuras campanhas de marketing. -->
+
+- Criar discussões para elucidar se o acervo está atualizado ou não.
+
+- Verificar a disponibilidade online das coleções.
+
+- Avaliar métricas internas em relação a quantidade de emprestímos por biblioteca.
+
+- Realizar pesquisas para entender a razão de temas apresentarem números baixos de emprestimos.
