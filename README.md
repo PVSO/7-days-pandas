@@ -100,6 +100,8 @@ Hipótese 5 - Quais coleções são mais emprestadas?
 ## Passo 5: Visualização
  - Criação de dashboard contendo métricas principais (Total de registros na base de dados, Tema mais emprestado, Biblioteca com maior arcevo, Coleção mais frequente,Tipo de vinculo de usuário que mais usa o arcevo), gráficos de linha para distribuição anual dos emprestimos durante os anos de 2010 a 2022.
 
+[Dashboard](https://analyses-arcevos-ufrn.streamlit.app/)
+
 
 # Resultados
 - Desde 2014 observa-se uma tendência de queda nos empréstimos, com redução acentuada em 2019 possivelmente relacionada às restrições da pandemia de COVID-19. Em 2022 houve uma leve recuperação, refletindo a retomada das atividades presenciais. Recomenda-se investigar fatores internos e externos que possam ter contribuído para a diminuição contínua desde 2014 e durante o período pandêmico.
